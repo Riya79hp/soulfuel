@@ -100,6 +100,154 @@
 
 
    }
+    
+    
+    
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      place-items:center;
+    }
+    header{
+      background:linear-gradient(40deg,white,rgb(74, 198, 255));
+      height:100px;
+      width:100vw;
+       animation: bground 1s  0.1s infinite alternate-reverse ; 
+    }
+    nav ul li{
+      display:inline;
+      margin:6px;
+      padding:0px 10px;
+    }
+    nav ul li a{
+      text-decoration:none;
+      color:rgb(98, 214, 80);
+
+    }
+    #box{
+    background-size: contain;
+    background-image: url('BGHygiene5.jpg');
+    text-align: center;
+    padding: 100px;
+    color: #1e3f66;
+    font-family: open Sans ;
+    border-radius:20px;
+    }
+     h4{
+      padding-left:200px;
+      padding-top:140px; 
+      text-align: center;
+      font-size: 25px; 
+      color:white;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h3{
+      padding-top:250px;
+      color:white;
+    } 
+    .button{
+      display:grid;
+    padding: 10px 20px;
+    width:90px;
+    background-color:rgb(8, 140, 233) ;
+    color: #fff;
+    font-family: sans-serif;
+    border: 2px solid #1e3f66;
+    border-radius:30px;
+    text-decoration: none;
+    margin-left: 600px;
+    margin-top:40px;
+    }
+    .section{
+      padding:40px;
+    }
+     .imag{
+      display:inline-block;
+      width:170px;
+      height:170px;
+      border-radius: 100%;
+    }
+    .dis{
+      display: inline-block;
+      height:40px;
+      width:30vw;
+      border-radius:40px;
+      z-index:0;
+    } 
+.image{
+  display:flex;
+  align-items: center;
+  margin-right:350px;
+  margin-bottom:700px;
+  border-radius:.8em;
+  height:150px;
+  width:224px;
+}
+ im1{
+  margin-right:350px;
+  margin-bottom:700px;
+} 
+/* Card Style*/
+.container{
+        display: inline-block;
+        place-items: relative;
+        width: 255px;
+        height: 355px;
+        border-radius: 1em;
+        background: linear-gradient(50deg,#2a5a3b,#1e4886);
+        overflow: hidden;
+        margin-left:30px;
+        margin-top:10px;
+    }
+    .container::before{
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 35px;
+        top: 0;
+        right: 35px;
+        transition: 1.9s;
+        transform: rotate(-45deg) translate(0,-100px);
+    }
+    .card {
+        display: grid;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-family: cursive;
+        place-items: center;
+        width: 247px;
+        height: 347px;
+        border: 5px solid rgb(39, 196, 220);
+        background: #171614;
+        border-radius: .8em;
+        color: #a6a1a1;
+        overflow: hidden;
+        padding: 1em;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    
+    .card:hover{
+        color: #fefefe;
+        border:5px solid rgb(255, 255, 255);
+    }
+    h1,p{
+      text-decoration:none;
+      
+    }
+    .write{
+      margin-right:600px;
+    }
+@keyframes bground {
+  from{
+    background:linear-gradient(40deg,white,rgb(74, 198, 255));
+  }
+  to{
+    background:linear-gradient(40deg,rgb(74, 198, 255),white);
+  }
+}
 
 
 
@@ -112,7 +260,11 @@
 
 
 
-   #footer {
+
+   
+    
+    
+    #footer {
     display:grid;
     overflow: hidden;
     height:550px;
@@ -232,6 +384,69 @@
       </div>
     </form>
   </div>
+<section id="box">
+    <h4>SoulFuel</h4>
+ <h3>One step forward for your healthy living</h3>
+ <p>Just by having awareness about Health and Hygiene, one person can live a happy and healthy life, and in your busy life we are here to provide you the guidance that will makes your life wonderful, join with us from the button given below.</p>
+    <a href="form.html" target="_main" class="button"><b>Book Now</b></a>
+  </section>
+<section id="disease">
+  <div class="container">
+    <div class="card">
+        <div class="photos">
+         <a href="Header.html" target="_main"> <img src="TDecay.jpeg" alt="" class="image im1"></a>
+         <h1> DENTAL CARIES</h1>
+         <p>Problem of decay teeth</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <h1> GINGIVITIS</h1>
+        <img src="Gingivitis.png" alt="" class="image">
+          <p>Problem of decay teeth</p>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Diarrhea.jpg" alt="" class="image">
+          <h1> DIARRHEA</h1>
+          <p>Problem of decay teeth</p>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Scabies.webp" alt="" class="image">
+          <h1> SCABIES</h1>
+          <p>Problem of decay teeth</p>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Ringworms1.webp" alt="" class="image">
+          <h1> RINGWORM</h1>
+          <p>Problem of decay teeth</p>
+      </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+    
 <div id="footer">
 <div class="gride"><div style="display:flex;justify-content: center;"><h1 style="color:#2cb1ea">SOUL</h1><h1 style="color:aquamarine;">fuel</h1></div></div>
 <div class="gride" id="linkdiv">
