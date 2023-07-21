@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>myacc</title>
+</head>
+<style>
+
+#myacc{
+        width: 300px;
+        height: auto;
+        border: 2px solid black;
+        margin-left: 562px;
+        margin-top: 20px;
+        padding: 50px;
+       background-color: #fff;
+        position: absolute;
+        
+    }
+    #myacc input[type="text"],
+    #myacc input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    #myacc input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .signup-social {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .signup-social a {
+        display: inline-block;
+        background-color: #fff;
+        color: #000;
+        padding: 8px;
+        margin: 0 5px;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+   #logodiv{
+   width:100px;
+   height:100px;
+
+
+   }
+</style>
+<body style="background-color: black;background-image: url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8211.jpg');background-size: cover;">
+    <div id="myacc">
+        <form>
+          <label for="email">Email:</label>
+          <br>
+          <input type="text" id="email" name="email" required>
+          <br><br>
+          <label for="mobile">Mobile Number:</label>
+          <br>
+          <input type="text" id="mobile" name="mobile" required>
+          <br><br>
+          <label for="password">Password:</label>
+          <br>
+          <input type="password" id="password" name="password" required>
+          <br><br>
+          <label for="confirmPassword">Confirm Password:</label>
+          <br>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <br><br>
+          <input type="submit" value="Sign Up" onclick="closefunc1()">
+          <div class="signup-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-apple"></i></a>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
