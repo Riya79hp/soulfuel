@@ -343,60 +343,77 @@
 
 
 
+
+  
+    
   #footer {
-    display:grid;
+    display: grid;
     overflow: hidden;
-    height:550px;
-  margin-top:25px;
+    height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 60px 380px;
-    border-radius: 15px 15px 15px 15px;
-    background-color:#fbf5ed;
+    grid-template-rows: repeat(3, auto);
+    border-radius: 15px;
+    background-color: #fbf5ed;
+    padding: 20px;
     
-   }
-   
-   
-   #linkdiv{
+  }
+
+  #linkdiv {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap:25px;
-    
-   }
-  #main-content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+    gap: 25px;
+    margin-top: 10px;
   }
-  .main-contentgrid{
-    
+
+  #main-content {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows:repeat(1,1fr) ;
-
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
   }
-  .main-contentgrid a{
-    color:#000}
-    .main-contentgrid a:hover{
-      color:#ba235f;
-    }
-    
-    #second--half{
-      display:grid;
-      grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(2,1fr);
-    }
-    #footer a:hover{
-      color:#ba235f;
-      text-decoration: none;
-      text-shadow:5px 5px 5px 5px;
-    }
-    #footer a{
-      color:#000;
-      text-decoration: none;
+
+  .main-contentgrid a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .main-contentgrid a:hover {
+    color: #ba235f;
+  }
+
+  #second-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  #footer a:hover {
+    color: #ba235f;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px 5px;
+  }
+
+  #footer a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    #footer {
+      grid-template-rows: repeat(4, auto);
+      height: auto;
     }
 
-    
+    #main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .main-contentgrid {
+      grid-template-columns: 1fr;
+    }
+  }
     
 
 
@@ -667,67 +684,66 @@
 
 
 
-     <div id="footer">
-    <div class="gride"><div style="display:flex;justify-content: center;"><h1 style="color:#2cb1ea">SOUL</h1><h1 style="color:aquamarine;">fuel</h1></div></div>
-    <div class="gride" id="linkdiv">
+ <div id="footer">
+    <div class="grid"><div style="display:flex;justify-content: center;"><h1 style="color:#2cb1ea">SOUL</h1><h1 style="color:aquamarine;">fuel</h1></div></div>
+    <div class="grid" id="linkdiv">
       <i class="fab fa-instagram" style="font-size:28px;cursor: pointer;"></i>
       <i class="fab fa-facebook " style="font-size:28px;cursor: pointer;"></i>
       <i class="fab fa-youtube " style="font-size:28px;cursor: pointer;"></i>
       <i class="fab fa-twitter " style="font-size:28px;cursor: pointer;"></i>
       <i class="fab fa-pinterest " style="font-size:28px;cursor: pointer;"></i>
     </div>
-    <div class="gride" id="main-content">
+    <div class="grid" id="main-content">
       <div class="main-contentgrid">
-        <div class="main-contentgrid1">
-        <p style="margin-left:26%;"><a href="#">About Us</a></p>
+        <p style="margin-left: 26%;"><a href="#">About Us</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Contact Us</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Privacy Policy</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Privacy Settings</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Advertising Policy</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Health Topics</a></p>
+        <hr>
+      </div>
+      <div class="main-contentgrid">
+       
+        <p style="margin-left:26%;"><a href="#">Medical affairs</a></p>
         <hr></hr>
-        
-        <p  style="margin-left:26%;"><a href="#"  >Contact Us</a></p>
+      
+        <p  style="margin-left:26%;"><a href="#"  >Content integrity</a></p>
         <hr></hr>
-        <p  style="margin-left:26%;"><a href="#">Privacy Policy</a></p>
+        <p  style="margin-left:26%;"><a href="#">Newsletters</a></p>
         <hr></hr>
-        <p  style="margin-left:26%;"><a href="#">Privacy Settings</a></p>
+        <p  style="margin-left:26%;"><a href="#">Subscriptions</a></p>
         <hr></hr>
-        <p  style="margin-left:26%;"><a href="#">Advertising Policy</a></p>
+        <p  style="margin-left:26%;"><a href="#">Products</a></p>
         <hr></hr>
-        <p  style="margin-left:26%;"><a href="#">Health Topics</a></p></div>
-        <div class="main-contentgrid1">
-          <p style="margin-left:26%;"><a href="#">Medical affairs</a></p>
-          <hr></hr>
-        
-          <p  style="margin-left:26%;"><a href="#"  >Content integrity</a></p>
-          <hr></hr>
-          <p  style="margin-left:26%;"><a href="#">Newsletters</a></p>
-          <hr></hr>
-          <p  style="margin-left:26%;"><a href="#">Subscriptions</a></p>
-          <hr></hr>
-          <p  style="margin-left:26%;"><a href="#">Products</a></p>
-          <hr></hr>
-          <p  style="margin-left:26%;"><a href="#">Carrer</a></p></div>
-         </div>
-        
-        
-        
-     
-    <div class="main-contentgrid" id="second--half">
-     <div class="second-half1"><p style="font-size:20px;padding: 15px;">Subscribe to our health and wellness website for the latest insights and tips on living a healthier life. Our curated content covers nutrition, fitness, mental well-being, and holistic approaches to wellness. Gain access to exclusive articles, expert interviews, and practical advice to support your journey to optimal health. Join our community today and embark on a transformative path to overall well-being.</p></div>
-    
-    
-    <div class="second-half1">
-      <h1 style="font-family: cursive;height:0px;text-align: center;">SUBSCRIBE</h1>
-    <span style="display: flex;justify-content: center;margin-top:10%;"><input type="text" style="font-size: 30px;" placeholder="Enter your email..."><button style="background-color: #2cb1ea;color:aquamarine;cursor:pointer;">SIGN-UP</button></span>
-    <div style="display: flex;justify-content:center;margin-top:15px;gap:20px;"><i class="fab fa-paypal" style="cursor: pointer;"></i>
-    <i class="fas fa-university" style="cursor: pointer;"></i>
-    <i class="fab fa-cc-visa" style="cursor: pointer;"></i>
-    <i class="fab fa-cc-mastercard" style="cursor: pointer;"></i></div>
+        <p  style="margin-left:26%;"><a href="#">Carrer</a></p>
+        <hr></hr>
+      </div>
     </div>
-    
+    <div class="grid" id="second-half">
+      <div class="second-half1">
+        <p style="font-size: 16px; padding: 15px;">Subscribe to our health and wellness website for the latest insights and tips on living a healthier life. Our curated content covers nutrition, fitness, mental well-being, and holistic approaches to wellness. Gain access to exclusive articles, expert interviews, and practical advice to support your journey to optimal health. Join our community today and embark on a transformative path to overall well-being.</p>
+      </div>
+      <div class="second-half1">
+        <h1 style="font-family: cursive; text-align: center;">SUBSCRIBE</h1>
+        <span style="display: flex; justify-content: center;margin-top:20px;"><input type="text" style="font-size: 16px;" placeholder="Enter your email..."><button style="background-color: #2cb1ea; color: aquamarine; cursor: pointer;">SIGN-UP</button></span>
+        <div style="display: flex; justify-content: center; margin-top: 15px; gap: 20px;">
+          <i class="fab fa-paypal" style="cursor: pointer;"></i>
+          <i class="fas fa-university" style="cursor: pointer;"></i>
+          <i class="fab fa-cc-visa" style="cursor: pointer;"></i>
+          <i class="fab fa-cc-mastercard" style="cursor: pointer;"></i>
+        </div>
+      </div>
     </div>
-    
+    <div style="background-color: #000; color: #fff; padding: 5px; text-align: center;margin-top:10px;width:100%;border-radius: 10px 10px 10px 10px;">
+      © 2018 Soulfuel. All rights reserved. All content and materials on the Soulfuel website, including text, images, and designs, are protected by copyright. Reproduction, distribution, or unauthorized use of any content without prior written permission from Soulfuel is strictly prohibited. For inquiries or permissions, please contact us at U_soulfuel@gmail.com. Your compliance with these terms is greatly appreciated. Thank you for visiting Soulfuel.
     </div>
-    <div style="background-color: #000;color:#fff;width:100%;object-fit:cover;padding:5px;"> © 2018 Soulfuel. All rights reserved. All content and materials on the Soulfuel website, including text, images, and designs, are protected by copyright. Reproduction, distribution, or unauthorized use of any content without prior written permission from Soulfuel is strictly prohibited. For inquiries or permissions, please contact us at U_soulfuel@gmail.com. Your compliance with these terms is greatly appreciated. Thank you for visiting Soulfuel.</div>
-    </div>
-    
+  </div>
     
     
     
