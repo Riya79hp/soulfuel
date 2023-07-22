@@ -145,8 +145,7 @@
     
     
     
- 
-   *{
+    *{
       margin: 0px;
       padding: 0px;
     }
@@ -155,13 +154,12 @@
     }
     #box{
     background-size: contain;
-    background-image:url("gradient.jpeg");
+    background-image: url('BGHygiene5.jpg');
     text-align: center;
     padding: 100px;
     color: #1e3f66;
     font-family: open Sans ;
     border-radius:20px;
-        margin-top:30px;
     }
     #disease{
       background: linear-gradient(#2e3192 33%,#1bffff 67%);
@@ -295,79 +293,64 @@
     background:linear-gradient(40deg,rgb(74, 198, 255),white);
   }
 }
-
-
-@media (max-width: 768px) {
-            /* Adjust the styles for smaller screens */
-            #logodiv {
-                width: 80px;
-                height: 80px;
-            }
-            #div1 {
-                flex-direction: column;
-                align-items: center;
-            }
-            .iconflex {
-                margin: 10px;
-            }
-            .button {
-                margin-left: 0;
-            }
-            .image {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            .main-contentgrid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-            #second-half {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
- .genre-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 100px;
-     background-color: rgb(32, 185, 202);
-     background-radius:10px 10px 10px 10px;
-     flex-wrap:column;
-    }
-    
-    .genre {
-      text-align: center;
-    }
-    
-    .genre img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    
-    .genre h3 {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-    .genre-container a:hover{
-        color:#ba235f;
-    }
-    a{
-        text-decoration: none;
-        color:white;
+/* Big Card CSS */
+@media screen and (max-width: 768px) {
+      body {
+        text-align: center;
+      }
+      #box {
+        padding: 50px;
+      }
+      .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+      }
+      .image {
+        height: 100px;
+        width: 150px;
+      }
+      .card {
+        width: 220px;
+        height: 320px;
+        padding: 0.5em;
+      }
+      .button {
+        margin-left: 0;
+      }
+      .write,
+      .read {
+        font-size: 14px;
+      }
     }
 
+    @media screen and (max-width: 480px) {
+      #box {
+        padding: 30px;
+      }
+      .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+      }
+      .image {
+        height: 80px;
+        width: 120px;
+      }
+      .card {
+        width: 180px;
+        height: 260px;
+        padding: 0.3em;
+      }
+      .button {
+        margin-left: 0;
+      }
+      .write,
+      .read {
+        font-size: 12px;
+      }
+    }
 
-
-
-    
-
-
-
-
-
-  
     
   #footer {
     display: grid;
@@ -533,27 +516,7 @@
     
 
     
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  <section id="box">
+    <section id="box">
     <h4>SoulFuel</h4>
  <h3>One step forward for your healthy living</h3>
  <p>Just by having awareness about Health and Hygiene, one person can live a happy and healthy life, and in your busy life we are here to provide you the guidance that will makes your life wonderful, join with us from the button given below.</p>
@@ -563,7 +526,7 @@
   <div class="container">
     <div class="card">
         <div class="photos">
-         <img src="Tdecay.jpg.jpeg" alt="" class="image im1">
+         <img src="TDecay.jpeg" alt="" class="image im1">
          <h1> DENTAL CARIES</h1>
          <h4>Problem of decay teeth</h4>
          <p class="write">Caused by poor oral hygiene, especially inadequate brushing and flossing</p>
@@ -574,7 +537,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="Gingivitis.png.jpeg" alt="" class="image">
+        <img src="Gingivitis.png" alt="" class="image">
         <h1> GINGIVITIS</h1>
           <h4>A type of gum disease</h4>
           <p class="write">Inflammation of the gums due to plaque buildup and poor oral hygiene</p>
@@ -585,7 +548,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="Diarrhea.jpg.jpeg" alt="" class="image">
+        <img src="Diarrhea.jpg" alt="" class="image">
           <h1> DIARRHEA</h1>
           <h4>frequent vomit and stomuch pain</h4>
           <p class="write">Caused by ingestion of contaminated food or water, poor sanitation, and lack of handwashing</p>
@@ -596,7 +559,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="Scabies.webp.jpeg" alt="" class="image">
+        <img src="Scabies.webp" alt="" class="image">
           <h1> SCABIES</h1>
           <h4>Problem of itching and rashes</h4>
           <p class="write">Skin infestation caused by the Sarcoptes scabiei mite, often spread through close personal contact</p>
@@ -607,7 +570,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="Ringworms1 (2).webp" alt="" class="image">
+        <img src="Ringworms1.webp" alt="" class="image">
           <h1> RINGWORM</h1>
           <h4>Type of skin infection</h4>
           <p class="write">Fungal infection of the skin, often transmitted through direct contact with an infected person or pet</p>
@@ -618,7 +581,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="liver.jpeg" alt="" class="image">
+        <img src="HepatitisA.jpg" alt="" class="image">
         <h1> HEPATITISA</h1>
           <h4>Infection of stomuch due to poor Hygiene</h4>
           <p class="write">Viral infection transmitted through the fecal-oral route, often due to poor hygiene</p>
@@ -629,7 +592,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="lice.jpeg" alt="" class="image">
+        <img src="Pediculosis.jpg" alt="" class="image">
         <h1>PEDICULOSIS</h1>
           <h4>Problem of head lices</h4>
           <p class="write">Infestation of the scalp by lice, often spread through direct head-to-head contact</p>
@@ -640,7 +603,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="eyes.jpeg" alt="" class="image">
+        <img src="Trachoma.jpg" alt="" class="image">
         <h1> TRACHOMA</h1>
           <h4>Infection of eyes</h4>
           <p class="write">Bacterial infection affecting the eyes, typically spread through personal contact, flies, or contaminated towels</p>
@@ -651,7 +614,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="typhoid.jpeg" alt="" class="image">
+        <img src="Typhoid.jpg" alt="" class="image">
         <h1> TYPHOID</h1>
           <h4>Type of bacterial infection</h4>
           <p class="write">Bacterial infection caused by Salmonella typhi, usually spread through contaminated food or water</p>
@@ -662,7 +625,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="Gingivitis.png.jpeg" alt="" class="image">
+        <img src="Gingivitis.png" alt="" class="image">
         <h1> GINGIVITIS</h1>
           <h4>Problem of decay teeth</h4>
           <a href="Header.html" target="_main" class="read"><b>Read more...</b></a>
@@ -670,14 +633,10 @@
   </div>
 </div>
 </section>
+<br> <br>
 
-    
-
-<h1 style="text-align:center;margin-top:20px;">Explore by genre</h1>
-
+<h2>EXPLORE BY GENRE</h2>
   <div class="genre-container">
-
-      <hr></hr>
     <div class="genre">
       <a href="sleep.html">
         <img src="sleep.jpg" alt="Sleep" />
@@ -703,13 +662,139 @@
       </a>
     </div>
     <div class="genre">
-        <a href="tipstriks.html">
-          <img src="brain.jpg" alt="tips" />
-          <h3>Quick response</h3>
-        </a>
-      </div>
+      <a href="tipstriks.html">
+        <img src="brain.jpg" alt="tips" />
+        <h3>Quick Response</h3>
+      </a>
+    </div>
   </div>
+  <br> <br>
+  <h1>Frequently Asked Questions</h1>
 
+  <div class="faq">
+    <input type="checkbox" class="faq-toggle" id="faq1">
+    <label class="faq-question" for="faq1"># Can yoga help with back pain?</label>
+    <div class="faq-answer">
+      Yes, certain yoga poses can strengthen the back muscles and improve flexibility, alleviating back pain. Poses like Cat-Cow, Cobra, and Child's Pose can be beneficial.
+    </div>
+  </div>
+ 
+
+  <div class="faq">
+    <input type="checkbox" class="faq-toggle" id="faq2">
+    <label class="faq-question" for="faq2"># What are some healthy and nutritious meal options for weight loss?</label>
+    <div class="faq-answer">
+      Include a balanced mix of whole grains, lean proteins, fruits, vegetables, and healthy fats in your diet. Portion control and avoiding sugary, processed foods are also crucial.
+    </div></div>
+    
+    <div class="faq">
+        <input type="checkbox" class="faq-toggle" id="faq3">
+        <label class="faq-question" for="faq3"># What are some effective yoga poses for beginners?
+
+        </label>
+        <div class="faq-answer">
+            For beginners, here are five foundational yoga poses:
+            - **Mountain Pose:** Stand tall with feet together, engage your core, and relax your shoulders.
+            - **Downward Facing Dog:** Start on all fours, lift your hips upward, forming an inverted V shape.
+            - **Warrior 2:** Step one foot back, bend your front knee, and extend arms out to the sides.
+            - **Child's Pose:** Kneel down, sit back on your heels, and stretch your arms forward.
+            - **Corpse Pose (Savasana):** Lie on your back, arms at your sides, and focus on deep, relaxing breaths.
+        </div>
+    </div> 
+
+    <div class="faq">
+        <input type="checkbox" class="faq-toggle" id="faq4">
+        <label class="faq-question" for="faq4">#What is the best way to stay motivated for regular workouts?</label>
+        <div class="faq-answer">
+            Set realistic goals, create a workout schedule, find a workout buddy for accountability, track your progress, and celebrate milestones. Remember to choose activities you enjoy to make it more sustainable.
+
+        </div></div>
+      
+
+        <div class="faq">
+            <input type="checkbox" class="faq-toggle" id="faq5">
+            <label class="faq-question" for="faq5">#What are some healthy and nutritious meal options for weight loss??</label>
+            <div class="faq-answer">
+                Include a balanced mix of whole grains, lean proteins, fruits, vegetables, and healthy fats in your diet. Portion control and avoiding sugary, processed foods are also crucial.
+    
+            </div></div>
+            
+
+            <div class="faq">
+                <input type="checkbox" class="faq-toggle" id="faq6">
+                <label class="faq-question" for="faq6">#How can I prevent injuries during exercise?</label>
+                <div class="faq-answer">
+                    Warm up before workouts, use proper form and technique, gradually increase intensity, listen to your body, and don't ignore pain or discomfort.
+        
+                </div></div>
+               
+
+                <div class="faq">
+                    <input type="checkbox" class="faq-toggle" id="faq7">
+                    <label class="faq-question" for="faq7">#How can I prevent injuries during exercise?</label>
+                    <div class="faq-answer">
+                        Warm up before workouts, use proper form and technique, gradually increase intensity, listen to your body, and don't ignore pain or discomfort.
+            
+                    </div></div>
+                   
+
+                    <div class="faq">
+                        <input type="checkbox" class="faq-toggle" id="faq8">
+                        <label class="faq-question" for="faq8"> What are the benefits of regular cardiovascular exercise?</label>
+                        <div class="faq-answer">
+                            Cardiovascular exercise improves heart health, stamina, and circulation, helps with weight management, boosts mood, and reduces the risk of chronic diseases.
+                
+                        </div></div>
+
+     <div class="faq">
+        <input type="checkbox" class="faq-toggle" id="faq9">
+          <label class="faq-question" for="faq9"> What are some tips for managing stress and anxiety?
+          </label>
+              <div class="faq-answer">
+                Along with yoga and meditation, try deep breathing exercises, spending time in nature, engaging in hobbies, seeking support from loved ones, and considering therapy if needed.
+                    
+                            </div></div>
+
+     <div class="faq">
+                                <input type="checkbox" class="faq-toggle" id="faq10">
+                                  <label class="faq-question" for="faq10"> How can I make sure I'm drinking enough water throughout the day?
+                                  </label>
+                                      <div class="faq-answer">
+                                        Carry a reusable water bottle, set reminders on your phone, drink water before and after meals, and monitor your urine color (pale yellow indicates proper hydration).
+                                            
+                                                    </div></div>
+             
+                                                    <div class="faq">
+                                                        <input type="checkbox" class="faq-toggle" id="faq11">
+                                                        <label class="faq-question" for="faq11">#Can yoga help with back pain?</label>
+                                                        <div class="faq-answer">
+                                                            Yes, certain yoga poses can strengthen the back muscles and improve flexibility, alleviating back pain. Poses like Cat-Cow, Cobra, and Child's Pose can be beneficial.
+                                                        </div></div>                                               
+    
+
+       
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
 
 
 
@@ -786,7 +871,7 @@
     
 
 
-
+<script src="scripts.js"></script>
 
 
  
