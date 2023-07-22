@@ -574,6 +574,25 @@ body {
       grid-template-columns: 1fr;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
      .genre-container {
       display: flex;
       justify-content: space-around;
@@ -601,7 +620,36 @@ body {
         text-decoration: none;
     }
    
+/* Media Queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      .genre-container {
+        flex-wrap: wrap;
+      }
 
+      .genre {
+        flex-basis: 45%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .genre-container {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .genre {
+        margin: 10px;
+      }
+
+      .genre img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .genre h3 {
+        font-size: 14px;
+      }
+    }
 
 
 
