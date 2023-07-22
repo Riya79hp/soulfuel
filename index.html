@@ -307,6 +307,7 @@
       justify-content: space-around;
       align-items: center;
       margin-top: 100px;
+     background-color: green;
     }
     
     .genre {
@@ -332,7 +333,37 @@
         text-decoration: none;
         color:rgb(31, 102, 177);
     }
+ #animationexplore{
+        animation-name:explore;
+        animation-duration:8s;
+        animation-iteration-count: 1000000;
 
+    }
+   
+
+
+     @keyframes explore{
+0%{
+color:blanchedalmond;
+margin-left:20px;
+
+}
+
+25%{
+color:rgb(89, 71, 142);
+}
+50%{
+color:rgb(120, 208, 145);
+
+}
+75%{
+color:rgb(141, 147, 92);
+
+}
+100%{
+    color:blanchedalmond;
+    margin-left:1100px;
+}
 
 
 
@@ -621,9 +652,10 @@
     
 
 
-<h2>EXPLORE BY GENRE</h2>
+
   <div class="genre-container">
-    
+        <span style="margin-left: 600px;font-family: fantasy;font-size: 48px;"id="animationexplore">EXPLORE BY GENRE</span>
+    <hr></hr>
     <div class="genre">
       <a href="sleep.html">
         <img src="sleep.jpg" alt="Sleep" />
