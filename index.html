@@ -80,49 +80,84 @@
    
     
     
-    #div2{
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,500px);
-        width:1500px;
-        height:1500px;
-        margin-top:300px;
-        justify-content: space-between;
-        grid-row-gap:10px;
-        grid-column-gap:10px;
-        transition: 0.2s;
-        margin-top:20px;
 
-    }
-    .childdiv{
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-       border-radius: 30px 30px 30px 30px;
-       box-shadow: 2px 2px 2px 2px rgb(140, 140, 140);
-       transition:.2s all; 
-    }
-    
+        /* Header styles */
+        header {
+            background-color: #21abc7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
 
- .childdiv:hover{
-  transform:scale(1);
-  filter:blur(0px);
-  opacity:1;
-  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
-     transform:translateY(-5px);
-    
-}
- #childdiv2{
-    grid-row:span 2;
-    grid-column:span 2;
-    overflow:hidden;
-   }
-   #childdiv6{
-    grid-column: span 2;
-    overflow:hidden;
-   }
-   #childdiv7{
-    grid-column: span 2;
-    overflow:hidden;
-   }
+        header h1 {
+            margin: 0;
+        }
+
+        header input[type="text"] {
+            height: 30px;
+            width: 200px;
+            padding: 5px;
+            border: none;
+        }
+
+        /* Main content grid styles */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item-content {
+            padding: 10px;
+        }
+
+        .grid-item-content h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #21abc7;
+        }
+
+        .grid-item-content p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Responsive styles for grid items */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Hover effect */
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
   #logo-div{
    width:100px;
    height:100px;
@@ -617,21 +652,57 @@ body {
         </div>
     </div>
 
-    <div id="div2">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="cornfithub.jpg" alt="Corn" />
+                <div class="grid-item-content">
+                    <h2>DO YOU KNOW?</h2>
+                    <p>Heres how to elevate the taste of your corn to make your diet more smooth and delicious. Click to know more!!</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="vaccine.jpg" alt="Vaccine" />
+                <div class="grid-item-content">
+                    <h2>KNOW THIS ABOUT SARS VACCINE!!</h2>
+                    <p>Getting vaccine of SARS???.The contagious and harmful virus that spread across over 140 countries, in that situation you can't risk anything, right? So here are the facts you should know before going to the SARS vaccination center.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="mentalhealthfithub.webp" alt="Vaccine" />
+                <div class="grid-item-content">
+                    <h2><capital>No barriers</capital></h2>
+                    <p>Its mental health month!! Join us to fight against the taboo and help to improve the mental health of person</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="sleepdeprived fithub.jpg" alt="Vaccine" />
+                <div class="grid-item-content">
+                    <h2><capital>Sleep deprived?</capital></h2>
+                    <p>Mantras to sleep effectively.</p>
+                </div>
 
-        <div class="childdiv" style="overflow:hidden;"><img src="cornfithub.jpg" style="height:70%;width: 100%;object-fit:cover;"><h1 style="margin-left:5px;">DO YOU KNOW?</h1><P style="font-size:16px;margin-left:5px;">
-        Heres how to elevate the taste of your corn to make your diet more smooth and delicious. Click to know more!!</P>
-        </div>
-      <div class="childdiv" id="childdiv2"><img src="vaccine.jpg" style="width:100%;height:70%;object-fit:cover;"><h1 style="font-size:48px;margin-left:5px;">KNOW THIS ABOUT SARS VACCINE!!</h1><p style="font-size:20px;margin-left:5px;">Getting vaccine of SARS???.The contagious and harmful virus that spread across over 140 countires,in that situation you cant risk anything, right? So here are the facts you should know before going to SARS vaccination center.</p></div>
-      <div class="childdiv" style="overflow:hidden;"><img src="mentalhealthfithub.webp" style="width:100%;height:70%;object-fit:cover;"><h1 style="margin-left:5px;">No barriers</h1><p style="font-size:16px;margin-left:5px;">Its mental health month!! Join us to fight against the taboo and help to improve the mental health of people.  </p></div>
-      <div class="childdiv" style="overflow: hidden;"><img src="sleepdeprived fithub.jpg" style="width:100%;height:70%;object-fit:cover;"><h1 style="margin-left:5px;" >Sleep deprived?</h1><p style="font-size:19px;margin-left:5px;">Mantras to sleep effectively.</p>
-      </div>
-      <div class="childdiv" style="overflow:hidden;"><img src="green-veggie fithub.webp" style="width:100%;height:70%;object-fit:cover;"><h1 style="margin-left:5px;">Greens!!</h1><p  style="font-size:17px;margin-left:5px;">Decide which green to choose for this monsoon season. Over 1000s of variety.</p></div>
-      <div class="childdiv" id="childdiv6"><img src="weightlossfithub.jpg" style="width:100%;height:70%;"><h1 style="margin-left:8px;">Fat to Fit!?</h1 style="margin-left:8px;"><p style="font-size:20px;margin-left:8px;">Here's how she reduced 30 kgs in just 70 days!!</p></div>
-      <div class="childdiv" id="childdiv7"><img src="equipmeentfithub.jpg" style="width:100%;height:70%;"><h1 style="margin-left:8px;">EQUIPPED!!</h1><p style="font-size:20px;margin-left:8px;">Do you have a small space? Here's over 100s of excercising equipment for small spaces.</p></div>
-    </div>
+            </div>
+            <div class="grid-item">
+                <img src="green-veggie fithub.webp" alt="Vaccine" />
+                <div class="grid-item-content">
+                    <h2><capital>Greens!!</capital></h2>
+                    <p>Decide which green to choose for this monsoon season. Over 1000s of variety</p>
+                </div>
+                </div>
+                <div class="grid-item">
+                    <img src="weightlossfithub.jpg" alt="Vaccine" />
+                    <div class="grid-item-content">
+                        <h2><capital>Fat to Fit!?</capital></h2>
+                        <p>Here's how she reduced 30 kgs in just 70 days!!</p>
+                    </div>
+                    </div>
+                    
     
-      
+
+            </div>
+         
+    </div>
     
 
     
