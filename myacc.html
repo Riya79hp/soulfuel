@@ -7,18 +7,27 @@
     <title>myacc</title>
 </head>
 <style>
-
-#myacc{
-        width: 300px;
+    body {
+        background-color: black;
+        background-image: url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8211.jpg');
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    #myacc {
+        width: 100%;
+        max-width: 400px;
         height: auto;
         border: 2px solid black;
-        margin-left: 562px;
-        margin-top: 20px;
         padding: 50px;
-       background-color: #fff;
-        
-        
+        background-color: #fff;
     }
+    
     #myacc input[type="text"],
     #myacc input[type="password"] {
         width: 100%;
@@ -28,6 +37,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
     }
+    
     #myacc input[type="submit"] {
         background-color: #4CAF50;
         color: white;
@@ -36,11 +46,13 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    
     .signup-social {
         display: flex;
         justify-content: center;
         margin-top: 20px;
     }
+    
     .signup-social a {
         display: inline-block;
         background-color: #fff;
@@ -50,40 +62,46 @@
         border-radius: 50%;
         text-decoration: none;
     }
-   #logodiv{
-   width:100px;
-   height:100px;
-
-
-   }
+    
+    #logodiv {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Responsive adjustments */
+    @media screen and (max-width: 500px) {
+        #myacc {
+            padding: 30px;
+        }
+    }
 </style>
-<body style="background-color: black;background-image: url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8211.jpg');background-size: cover;">
+<body>
     <div id="myacc">
         <form>
-          <label for="email">Email:</label>
-          <br>
-          <input type="text" id="email" name="email" required>
-          <br><br>
-          <label for="mobile">Mobile Number:</label>
-          <br>
-          <input type="text" id="mobile" name="mobile" required>
-          <br><br>
-          <label for="password">Password:</label>
-          <br>
-          <input type="password" id="password" name="password" required>
-          <br><br>
-          <label for="confirmPassword">Confirm Password:</label>
-          <br>
-          <input type="password" id="confirmPassword" name="confirmPassword" required>
-          <br><br>
-          <input type="submit" value="Sign Up" onclick="closefunc1()">
-          <div class="signup-social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-google"></i></a>
-            <a href="#"><i class="fab fa-apple"></i></a>
-          </div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+            <label for="mobile">Mobile Number:</label>
+            <br>
+            <input type="text" id="mobile" name="mobile" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br><br>
+            <input type="submit" value="Sign Up" onclick="closefunc1()">
+            <div class="signup-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-apple"></i></a>
+            </div>
         </form>
-      </div>
+    </div>
 </body>
 </html>
