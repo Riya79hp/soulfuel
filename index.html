@@ -56,7 +56,7 @@
     }
 
 
-   @media screen and (max-width: 768px) {
+     @media screen and (max-width: 768px) {
         #div1 {
             flex-wrap: wrap;
             height: auto;
@@ -74,7 +74,7 @@
             max-width: 200px;
             margin-top: 10px;
         }
-        /* Move "soulfuel" text to the left */
+       
         #logodiv {
             margin-left: 10px;
         }
@@ -83,19 +83,27 @@
             justify-content: flex-start;
             align-items: center;
             margin-left: 10px; 
-            
-            /* Add some margin for separation */
+          
         }
         #soulfuel-text {
             margin-left: 5px;
         }
-        /* Move both the image and "soulfuel" to the left */
+   
         div[style*="display:flex;"] {
             flex-direction: column;
             align-items: flex-start;
         }
+        #div1 {
+            justify-content: center;
+        }
+       
+        .iconflex {
+            gap: 40px;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
-   
     
     
 
@@ -105,7 +113,7 @@
             padding: 20px;
         }
 
-        /* Header styles */
+    
         header {
             background-color: #21abc7;
             padding: 10px;
@@ -126,7 +134,7 @@
             border: none;
         }
 
-        /* Main content grid styles */
+       
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
