@@ -56,54 +56,64 @@
     }
 
 
-     @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
+        #header-container {
+            justify-content: flex-start;
+        }
+
+        #header-text {
+            margin-left: 10px;
+        }
+
         #div1 {
-            flex-wrap: wrap;
-            height: auto;
-            padding: 10px;
+            justify-content: center;
         }
+
         .iconflex {
-            margin-bottom: 10px;
+            display: none;
         }
-        #logodiv {
-            margin: 0 auto;
-            margin-top: 10px;
-        }
+
         #searchbox {
             width: 100%;
             max-width: 200px;
             margin-top: 10px;
         }
-       
+
         #logodiv {
             margin-left: 10px;
         }
+
         #soulfuel-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            margin-left: 10px; 
-          
-        }
-        #soulfuel-text {
-            margin-left: 5px;
-        }
-   
-        div[style*="display:flex;"] {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        #div1 {
-            justify-content: center;
-        }
-       
-        .iconflex {
-            gap: 40px;
-            margin-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
+            margin-left: 10px;
+            
         }
     }
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(33, 171, 199);
+        padding: 10px;
+    }
+
+    #header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-text {
+        color: #2cb1ea;
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    #header-text span {
+        color: aquamarine;
+    }
+
     
     
 
@@ -679,15 +689,17 @@ body {
   
 </style>
 <body>
-  <div style="display:flex;">
-        <div style="display:flex;justify-content:space-around;"><div id="logodiv">
-            <img src="1689315041666 (1).jpg" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-        <div id="soulfuel-container">
-            <span style="color:#2cb1ea;font-size: 45px;" id="soulfuel-text">SOUL</span><span id="soulfuel-text" style="color:aquamarine;font-size: 45px;">fuel</span>
-        </div>
+ <div id="header">
+        <div id="header-container">
+            <div id="logodiv">
+                <img src="1689315041666 (1).jpg" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div id="soulfuel-container">
+                <span id="header-text">SOUL<span>fuel</span></span>
+            </div>
         </div>
     </div>
+
 
     <hr>
     <div style="width:100%;height:800px;border-radius:10px 10px 10px 10px;overflow: hidden;">
