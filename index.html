@@ -7,7 +7,7 @@
      <title>soulfuel</title>
 </head>
 <style>
-     .stickysearch{
+      .stickysearch{
         transition: 0.2s;
     }
     
@@ -33,11 +33,11 @@
         margin-top: 15px;
         width: 200px;
     }
-    #div1 a{
+   #div1 a{
         color:whitesmoke;
         text-decoration: none;
     }
-   #div1 a:hover{
+    #div1 a:hover{
         color:aquamarine;
         text-shadow: 6px 6px 4px rgb(133, 131, 131);
     }
@@ -50,14 +50,13 @@
         justify-content: space-around;
         
     }
-   
     #logodiv{
         width: 100px;
         height: 100px;
     }
 
 
-    @media screen and (max-width: 768px) {
+   @media screen and (max-width: 768px) {
         #div1 {
             flex-wrap: wrap;
             height: auto;
@@ -75,8 +74,27 @@
             max-width: 200px;
             margin-top: 10px;
         }
+        /* Move "soulfuel" text to the left */
+        #logodiv {
+            margin-left: 10px;
+        }
+        #soulfuel-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px; 
+            
+            /* Add some margin for separation */
+        }
+        #soulfuel-text {
+            margin-left: 5px;
+        }
+        /* Move both the image and "soulfuel" to the left */
+        div[style*="display:flex;"] {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
-    
    
     
     
@@ -597,11 +615,13 @@ body {
   
 </style>
 <body>
- <div style="display:flex;">
+  <div style="display:flex;">
         <div id="logodiv">
-            <img src="1689315041666 (1).jpg" style="width:100%;height:100%;object-fit:cover;margin-left:570px;">
+            <img src="1689315041666 (1).jpg" style="width:100%;height:100%;object-fit:cover;">
         </div>
-        <span style="margin-left:570px;"><h1 style="color:#2cb1ea">SOUL</h1></span><span><h1 style="color:aquamarine;">fuel</h1></span>
+        <div id="soulfuel-container">
+            <span style="color:#2cb1ea;font-size: 45px;" id="soulfuel-text">SOUL</span><span id="soulfuel-text" style="color:aquamarine;font-size: 45px;">fuel</span>
+        </div>
     </div>
 
     <hr>
