@@ -101,7 +101,7 @@
     grid-column: span 2;
     overflow:hidden;
    }
-  #logodiv{
+  #logo-div{
    width:100px;
    height:100px;
 
@@ -272,7 +272,43 @@
     background:linear-gradient(40deg,rgb(74, 198, 255),white);
   }
 }
-   
+
+
+@media (max-width: 768px) {
+            /* Adjust the styles for smaller screens */
+            #logodiv {
+                width: 80px;
+                height: 80px;
+            }
+            #div1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .iconflex {
+                margin: 10px;
+            }
+            .button {
+                margin-left: 0;
+            }
+            .image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .main-contentgrid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            #second-half {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+
+
+
+
+
+
+    
     
 
 
@@ -341,7 +377,7 @@
 </style>
 <body>
   <div style="display:flex;">
-  <div id="logodiv">
+  <div id="logo-div">
 <img src="1689315041666 (1).jpg" style="width:100%;height:100%;object-fit:cover;margin-left:562px;"> </div>
 <span style="margin-left:570px;"><h1 style="color:#2cb1ea">SOUL</h1></span><span><h1 style="color:aquamarine;">fuel</h1></span>
 </div>
@@ -491,7 +527,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="jpg" alt="" class="image">
+        <img src="liver.jpg" alt="" class="image">
         <h1> HEPATITISA</h1>
           <h4>Infection of stomuch due to poor Hygiene</h4>
           <p class="write">Viral infection transmitted through the fecal-oral route, often due to poor hygiene</p>
@@ -502,7 +538,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="lices.jpg" alt="" class="image">
+        <img src="lices.jpeg" alt="" class="image">
         <h1>PEDICULOSIS</h1>
           <h4>Problem of head lices</h4>
           <p class="write">Infestation of the scalp by lice, often spread through direct head-to-head contact</p>
@@ -513,7 +549,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="eyes.jpg" alt="" class="image">
+        <img src="eyes.jpeg" alt="" class="image">
         <h1> TRACHOMA</h1>
           <h4>Infection of eyes</h4>
           <p class="write">Bacterial infection affecting the eyes, typically spread through personal contact, flies, or contaminated towels</p>
@@ -524,7 +560,7 @@
 <div class="container">
   <div class="card">
       <div>
-        <img src="WhatsApp Image 2023-07-21 at 4.34.34 PM (1).jpeg" alt="" class="image">
+        <img src="typhoid.jpeg" alt="" class="image">
         <h1> TYPHOID</h1>
           <h4>Type of bacterial infection</h4>
           <p class="write">Bacterial infection caused by Salmonella typhi, usually spread through contaminated food or water</p>
