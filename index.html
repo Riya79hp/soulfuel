@@ -611,63 +611,88 @@ body {
 
 
     
-     .genre-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 50px;
-    }
-    
-    .genre {
-      text-align: center;
-    }
-    
-    .genre img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    
-    .genre h3 {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-    a{
-        text-decoration: none;
-    }
-   
+     /* Genre container styles */
+.genre-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.genre {
+  text-align: center;
+  width: 200px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.genre img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.genre h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 /* Media Queries for responsiveness */
-    @media screen and (max-width: 768px) {
-      .genre-container {
-        flex-wrap: wrap;
-      }
+@media screen and (max-width: 768px) {
+  .genre-container {
+    flex-wrap: wrap;
+  }
 
-      .genre {
-        flex-basis: 45%;
-      }
-    }
+  .genre {
+    flex-basis: 45%;
+    margin: 10px;
+  }
 
-    @media screen and (max-width: 480px) {
-      .genre-container {
-        flex-direction: column;
-        margin-top: 20px;
-      }
+  .genre img {
+    width: 150px;
+    height: 150px;
+  }
 
-      .genre {
-        margin: 10px;
-      }
+  .genre h3 {
+    font-size: 14px;
+  }
+}
 
-      .genre img {
-        width: 150px;
-        height: 150px;
-      }
+@media screen and (max-width: 480px) {
+  .genre-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-      .genre h3 {
-        font-size: 14px;
-      }
-    }
+  .genre {
+    flex-basis: 90%;
+    margin: 10px auto;
+  }
+
+  .genre img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .genre h3 {
+    font-size: 14px;
+  }
+}
 
 
 
@@ -955,7 +980,7 @@ body {
       </a>
     </div>
   </div>
-  <br> <br>
+  <hr> <hr>
   <h1>Frequently Asked Questions</h1>
 
   <div class="faq">
