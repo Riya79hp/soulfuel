@@ -632,33 +632,29 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  transition: transform 0.3s ease;
 }
 
-.genre:hover img {
-  transform: scale(1.1);
+.genre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .genre .genre-content {
   background-color: #007bff;
-  padding: 15px;
-  border-radius: 50%;
+  padding: 10px 20px;
+  border-radius: 15px;
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   color: #fff;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
 .genre:hover .genre-content {
   opacity: 1;
-}
-
-.genre:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .genre h3 {
