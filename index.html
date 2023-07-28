@@ -607,11 +607,10 @@ body {
 
 
 
-
 /* Genre container styles */
 .genre-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
 }
@@ -619,49 +618,35 @@ body {
 .genre {
   text-align: center;
   width: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* Hide genre items initially */
+}
+
+/* Fade-in animation */
+.genre.fade-in {
+  opacity: 1;
+}
+
+.genre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .genre img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
-
-.genre:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.genre .genre-content {
-  background-color: #007bff;
-  padding: 10px 20px;
-  border-radius: 15px;
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.genre:hover .genre-content {
-  opacity: 1;
+  cursor: pointer;
 }
 
 .genre h3 {
   font-size: 18px;
   margin-top: 10px;
-  color: #fff;
-  margin: 0;
+  color: #444;
 }
 
 a {
@@ -671,6 +656,15 @@ a {
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
+  .genre-container {
+    flex-wrap: wrap;
+  }
+
+  .genre {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+
   .genre img {
     width: 150px;
     height: 150px;
@@ -682,16 +676,25 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .genre-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .genre {
+    flex-basis: 90%;
+    margin: 10px auto;
+  }
+
   .genre img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   .genre h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
-
 
 
     
