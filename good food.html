@@ -7,6 +7,140 @@
     <title>Good Food | Soulfuel</title>
 </head>
 <style>
+ .stickysearch{
+        transition: 0.2s;
+    }
+    
+    .stickysearch:hover{
+        transform: scale(1.2);
+        z-index: 1;
+        text-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    #div1 {
+        border-radius: 10px;
+        height:70px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(33, 171, 199);
+        font-size:large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #searchbox {
+        height: 30px;
+        margin-top: 15px;
+        width: 200px;
+    }
+   #div1 a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    #div1 a:hover{
+        color:aquamarine;
+        text-shadow: 6px 6px 4px rgb(133, 131, 131);
+    }
+    .showoff{
+        width:1500px;
+        height:1500px;
+    }
+    .iconflex{
+        display:flex;
+        justify-content: space-around;
+        
+    }
+    #logodiv{
+        width: 100px;
+        height: 100px;
+    }
+
+
+ @media screen and (max-width: 768px) {
+        #header-container {
+            justify-content: flex-start;
+        }
+
+        #header-text {
+            margin-left: 10px;
+        }
+
+        #div1 {
+            justify-content: center;
+        }
+
+        .iconflex {
+            display: none;
+        }
+
+        #searchbox {
+            width: 100%;
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        #logodiv {
+            margin-left: 10px;
+        }
+
+        #soulfuel-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px;
+            
+        }
+    }
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+    }
+
+    #header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-text {
+        color: #2cb1ea;
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    #header-text span {
+        color: aquamarine;
+    }
+
+    
+    
+
+        .containerr {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+    
+        header {
+            background-color: rgb(211, 211, 211);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+
+
+
+    
      body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
