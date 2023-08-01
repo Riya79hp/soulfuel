@@ -206,37 +206,26 @@
 
     
 
-    *{
+     *{
       margin: 0px;
       padding: 0px;
     }
     body{
       place-items:center;
     }
-    header{
-      background:linear-gradient(40deg,white,rgb(74, 198, 255));
-      height:100px;
-      width:100vw;
-      /* animation: bground 1s  0.1s infinite alternate-reverse ; */
-    }
-    nav ul li{
-      display:inline;
-      margin:6px;
-      padding:0px 10px;
-    }
-    nav ul li a{
-      text-decoration:none;
-      color:rgb(98, 214, 80);
-
-    }
     #box{
     background-size: contain;
-    background-image: url('gradient.jpeg');
+    background-image: url('BGHygiene5.jpg');
     text-align: center;
     padding: 100px;
     color: #1e3f66;
     font-family: open Sans ;
     border-radius:20px;
+    }
+    #disease{
+      background:rgb(23, 34, 128);
+      border-radius:5px;
+      margin-top:20px;
     }
     /* h4{
       padding-left:200px;
@@ -262,6 +251,12 @@
     text-decoration: none;
     margin-left: 600px;
     margin-top:40px;
+    cursor:pointer;
+    transition: .5s ease;
+    }
+    .button:hover{
+      background-color:#fff ;
+    color: rgb(8, 140, 233);
     }
     .section{
       padding:40px;
@@ -282,14 +277,10 @@
 .image{
   display:flex;
   border-radius:.8em;
-  /* margin removed */
+  border:2px solid black;
   height:150px;
   width:224px;
 }
-/* im1{
-  margin-right:350px;
-  margin-bottom:700px;
-} */
 /* Card Style*/
 .container{
         display: inline-block;
@@ -313,37 +304,43 @@
         transform: rotate(-45deg) translate(0,-100px);
     }
     .card {
-        /* new */
         display: flex;
         flex-direction: column;
-        /* font-family: 'Courier New', Courier, monospace; */
-        font-family: cursive;
+        font-family: 'Courier New', Courier, monospace;
+        /* font-family: cursive; */
         place-items: center;
         width: 247px;
         height: 347px;
         border: 5px solid rgb(39, 196, 220);
-        background: #171614;
+        background: #ffffff; /*#171614*/
         border-radius: .8em;
-        color: #a6a1a1;
+        color: #4CAF50;
         overflow: hidden;
-        /* padding: 1em;     removed */
-        padding-top: 30px;  /* new */
+        padding-top: 30px;
         text-align: center;
         cursor: pointer;
         transition: .5s ease;
     }
-    
     .card:hover{
-        color: #fefefe;
-        border:5px solid rgb(255, 255, 255);
+        color: #1e3f66;
+        background: #2196F3 ;
     }
-    h1,p{
-      text-decoration:none;
-      
+    h1{
+      text-decoration:none; 
     }
     .write{
-      margin-right:600px;
+      display: inline;
+      text-decoration: none;
+      color:white;
+      font-family:sans-serif;
     }
+    .read{
+      display: inline;
+      text-decoration: none;
+      color:white; /*#171614 */
+      font-family:sans-serif;
+    }
+
 @keyframes bground {
   from{
     background:linear-gradient(40deg,white,rgb(74, 198, 255));
@@ -352,10 +349,6 @@
     background:linear-gradient(40deg,rgb(74, 198, 255),white);
   }
 }
-
-
-
-
 
 
     
