@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll-triggered Pop-up Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2196F3; /* Blue */
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .blue {
+      background-color: #2196F3; /* Blue */
+    }
+
+    .green {
+      background-color: #4CAF50; /* Green */
+    }
+
+    .purple {
+      background-color: #9C27B0; /* Purple */
+    }
+
+    /* Add more CSS styles for additional color sections here */
+
+    footer {
+      background-color: #333; /* Dark gray */
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Styles for the sign-up form */
+    .sign-up-form-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .sign-up-form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .sign-up-form h2 {
+      margin-top: 0;
+    }
+
+    .sign-up-form form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .sign-up-form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .sign-up-form button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #2196F3; /* Blue */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .sign-up-form button.close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scroll-triggered Pop-up Sign Up Form</h1>
+  </header>
+
+  <main>
+    <section class="blue">
+      <h2>Section 1</h2>
+      <p>
+        This is the content of section 1.
+      </p>
+    </section>
+
+    <!-- Add more sections with different color schemes here -->
+    <section class="green">
+      <h2>Section 2</h2>
+      <p>
+        This is the content of section 2.
+      </p>
+    </section>
+
+    <section class="purple">
+      <h2>Section 3</h2>
+      <p>
+        This is the content of section 3.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Sign-up form HTML markup (hidden initially) -->
+  <div class="sign-up-form-overlay" style="display: none;">
+    <div class="sign-up-form">
+      <h2>Sign Up</h2>
+      <p>Enter your email to sign up:</p>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <button class="close-button" onclick="closeSignUpForm()">&times;</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to show the sign-up form
+    function showSignUpForm() {
+      var signUpFormOverlay = document.querySelector(".sign-up-form-overlay");
+      signUpFormOverlay.style.display = "flex";
+    }
+
+    // Function to close the sign-up form
+    function closeSignUpForm() {
+      var signUpFormOverlay = document.querySelector(".sign-up-form-overlay");
+      signUpFormOverlay.style.display = "none";
+    }
+
+    // Show the sign-up form after 3 seconds of scrolling
+    window.addEventListener("scroll", function() {
+      setTimeout(showSignUpForm, 3000);
+    });
+  </script>
+</body>
+</html>

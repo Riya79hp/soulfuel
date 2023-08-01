@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health and Hygiene</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      place-items:center;
+    }
+    #box{
+    background-size: contain;
+    background-image: url('BGHygiene5.jpg');
+    text-align: center;
+    padding: 100px;
+    color: #1e3f66;
+    font-family: open Sans ;
+    border-radius:20px;
+    }
+    #disease{
+      background:rgb(23, 34, 128);
+      border-radius:5px;
+      margin-top:20px;
+    }
+    /* h4{
+      padding-left:200px;
+      padding-top:140px; 
+      text-align: center;
+      font-size: 25px; 
+      color:white;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h3{
+      padding-top:250px;
+      color:white;
+    } */
+    .button{
+      display:grid;
+    padding: 10px 20px;
+    width:90px;
+    background-color:rgb(8, 140, 233) ;
+    color: #fff;
+    font-family: sans-serif;
+    border: 2px solid #1e3f66;
+    border-radius:30px;
+    text-decoration: none;
+    margin-left: 600px;
+    margin-top:40px;
+    cursor:pointer;
+    transition: .5s ease;
+    }
+    .button:hover{
+      background-color:#fff ;
+    color: rgb(8, 140, 233);
+    }
+    .section{
+      padding:40px;
+    }
+    /* .imag{
+      display:inline-block;
+      width:170px;
+      height:170px;
+      border-radius: 100%;
+    }
+    .dis{
+      display: inline-block;
+      height:40px;
+      width:30vw;
+      border-radius:40px;
+      z-index:0;
+    } */
+.image{
+  display:flex;
+  border-radius:.8em;
+  border:2px solid black;
+  height:150px;
+  width:224px;
+}
+/* Card Style*/
+.container{
+        display: inline-block;
+        place-items: relative;
+        width: 255px;
+        height: 355px;
+        border-radius: 1em;
+        background: linear-gradient(50deg,#2a5a3b,#1e4886);
+        overflow: hidden;
+        margin-left:30px;
+        margin-top:10px;
+    }
+    .container::before{
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 35px;
+        top: 0;
+        right: 35px;
+        transition: 1.9s;
+        transform: rotate(-45deg) translate(0,-100px);
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+        /* font-family: cursive; */
+        place-items: center;
+        width: 247px;
+        height: 347px;
+        border: 5px solid rgb(39, 196, 220);
+        background: #ffffff; /*#171614*/
+        border-radius: .8em;
+        color: #4CAF50;
+        overflow: hidden;
+        padding-top: 30px;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    .card:hover{
+        color: #1e3f66;
+        background: #2196F3 ;
+    }
+    h1{
+      text-decoration:none; 
+    }
+    .write{
+      display: inline;
+      text-decoration: none;
+      color:white;
+      font-family:sans-serif;
+    }
+    .read{
+      display: inline;
+      text-decoration: none;
+      color:white; /*#171614 */
+      font-family:sans-serif;
+    }
+
+@keyframes bground {
+  from{
+    background:linear-gradient(40deg,white,rgb(74, 198, 255));
+  }
+  to{
+    background:linear-gradient(40deg,rgb(74, 198, 255),white);
+  }
+}
+/* Big Card CSS */
+
+</style>
+</head>
+<body>
+  <section id="box">
+    <h4>SoulFuel</h4>
+ <h3>One step forward for your healthy living</h3>
+ <p>Just by having awareness about Health and Hygiene, one person can live a happy and healthy life, and in your busy life we are here to provide you the guidance that will makes your life wonderful, join with us from the button given below.</p>
+    <a href="form.html" target="_main" class="button"><b>Book Now</b></a>
+  </section>
+<section id="disease">
+  <div class="container">
+    <div class="card">
+        <div class="photos">
+         <img src="TDecay.jpeg" alt="" class="image im1">
+         <h1> DENTAL CARIES</h1>
+         <h4>Problem of decay teeth</h4>
+         <p class="write">Caused by poor oral hygiene, especially inadequate brushing and flossing</p>
+         <a href="Dental.html" target="_main" class="read"><b>Read more...</b></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Gingivitis.png" alt="" class="image">
+        <h1> GINGIVITIS</h1>
+          <h4>A type of gum disease</h4>
+          <p class="write">Inflammation of the gums due to plaque buildup and poor oral hygiene</p>
+          <a href="Gingivitis.html" target="_main" class="read"><b>Read more...</b> </a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Diarrhea.jpg" alt="" class="image">
+          <h1> DIARRHEA</h1>
+          <h4>frequent vomit and stomuch pain</h4>
+          <p class="write">Caused by ingestion of contaminated food or water, poor sanitation, and lack of handwashing</p>
+          <a href="Diarrhea.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Scabies.webp" alt="" class="image">
+          <h1> SCABIES</h1>
+          <h4>Problem of itching and rashes</h4>
+          <p class="write">Skin infestation caused by the Sarcoptes scabiei mite, often spread through close personal contact</p>
+          <a href="Scabies.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Ringworms1.webp" alt="" class="image">
+          <h1> RINGWORM</h1>
+          <h4>Type of skin infection</h4>
+          <p class="write">Fungal infection of the skin, often transmitted through direct contact with an infected person or pet</p>
+          <a href="Ringworm.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="HepatitisA.jpg" alt="" class="image">
+        <h1> HEPATITISA</h1>
+          <h4>Infection of stomuch due to poor Hygiene</h4>
+          <p class="write">Viral infection transmitted through the fecal-oral route, often due to poor hygiene</p>
+          <a href="Hepatitis.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Pediculosis.jpg" alt="" class="image">
+        <h1>PEDICULOSIS</h1>
+          <h4>Problem of head lices</h4>
+          <p class="write">Infestation of the scalp by lice, often spread through direct head-to-head contact</p>
+          <a href="Pediculosis.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Trachoma.jpg" alt="" class="image">
+        <h1> TRACHOMA</h1>
+          <h4>Infection of eyes</h4>
+          <p class="write">Bacterial infection affecting the eyes, typically spread through personal contact, flies, or contaminated towels</p>
+          <a href="Trachoma.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Typhoid.jpg" alt="" class="image">
+        <h1> TYPHOID</h1>
+          <h4>Type of bacterial infection</h4>
+          <p class="write">Bacterial infection caused by Salmonella typhi, usually spread through contaminated food or water</p>
+          <a href="Header.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+      <div>
+        <img src="Gingivitis.png" alt="" class="image">
+        <h1> GINGIVITIS</h1>
+          <h4>Problem of decay teeth</h4>
+          <a href="Header.html" target="_main" class="read"><b>Read more...</b></a>
+      </div>
+  </div>
+</div>
+</section>
+</body>
+</html>

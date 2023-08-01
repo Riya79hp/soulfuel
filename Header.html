@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+<style>
+    .stickysearch{
+        transition: 0.2s;
+    }
+    
+    .stickysearch:hover{
+        transform: scale(1.2);
+        z-index: 1;
+        text-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    #div1 {
+        border-radius: 10px;
+        height:70px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(33, 171, 199);
+        font-size:large;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+    #searchbox {
+        height: 30px;
+        margin-top: 15px;
+        width: 200px;
+    }
+    a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    a:hover{
+        color:aquamarine;
+        text-shadow: 6px 6px 4px rgb(133, 131, 131);
+    }
+    .showoff{
+        width:1500px;
+        height:1500px;
+    }
+    .iconflex{
+        display:flex;
+        justify-content: space-around;
+    }
+    #myacc{
+        width: 300px;
+        height: auto;
+        border: 2px solid black;
+        margin-left: 562px;
+        margin-top: 20px;
+        padding: 20px;
+        visibility: hidden;
+    }
+    #myacc input[type="text"],
+    #myacc input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    #myacc input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .signup-social {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .signup-social a {
+        display: inline-block;
+        background-color: #fff;
+        color: #000;
+        padding: 8px;
+        margin: 0 5px;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+   #logodiv{
+   width:100px;
+   height:100px;
+
+
+   }
+   /*Symptoms and cure CSS*/
+   #information{
+    background: url('BGHygiene4.avif');
+   }
+</style>
+<body>
+  <div style="display:flex;">
+  <div id="logodiv">
+<img src="C:\Users\riyak\Downloads\1689315041666.jpg" style="width:100%;height:100%;object-fit:cover;margin-left:562px;"> </div>
+<span style="margin-left:570px;"><h1 style="color:#2cb1ea">SOUL</h1></span><span><h1 style="color:aquamarine;">fuel</h1></span>
+</div>
+
+  <div id="div1">
+    <div class="iconflex">
+      <div style="width:40px;height:40px;">
+        <i class="fas fa-search" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+      </div>
+      <input type="text" id="searchbox" placeholder="SEARCH...">
+    </div>
+    <div class="iconflex">  
+      <div style="width:40px;height:40px;">
+        <i class="fa-solid fa-arrow-down-a-z" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+      </div>
+      <p class="stickysearch"><a href="#">Health A-Z</a></p>
+    </div>
+    <div class="iconflex"> 
+      <div style="width:40px;height:40px;">
+        <i class="fas fa-utensils"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+      </div>
+      <p class="stickysearch"><a href="#">Good Food</a></p>
+    </div>
+    <div class="iconflex"> 
+      <div style="width:20px;height:20px;margin-right: 8px;">
+        <i class="fas fa-pills" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i> 
+      </div>
+      <p class="stickysearch"><a href="#">Prevention And Cure</a></p>
+    </div>
+    <div class="iconflex"> 
+      <div style="width:20px;height:20px;">
+        <i class="fas fa-brain" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+      </div>
+      <p class="stickysearch"><a href="#">Tips And Tricks</a></p>
+    </div>
+    <div class="iconflex"> 
+      <div style="width:20px;height:20px;">
+        <i class="fas fa-user-circle"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+      </div class="iconflex">
+     <button style="border-radius:10px 10px 10px 10px;background-color:rgb(33, 171, 199);cursor: pointer;" onclick="openfunc1()"><span style="color:whitesmoke;">My account</span></button>
+     
+    </div>
+  </div>
+  <div id="myacc">
+    <form>
+      <label for="email">Email:</label>
+      <br>
+      <input type="text" id="email" name="email" required>
+      <br><br>
+      <label for="mobile">Mobile Number:</label>
+      <br>
+      <input type="text" id="mobile" name="mobile" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <br>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <br><br>
+      <input type="submit" value="Sign Up" onclick="closefunc1()">
+      <div class="signup-social">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-apple"></i></a>
+      </div>
+    </form>
+  </div>
+  <section id="information">
+    <div class="symptoms">
+      <h2>Symptoms</h2>
+    <ul>
+      <li>Toothache</li>
+      <li>Sensitivity</li>
+      <li>Visible hole or pit in the teeth</li>
+    </ul></div>
+    <div class="Cure">
+      <h2>Cure</h2>
+    <ul>
+      <li>Regular brushing and flossing</li>
+      <li>Dental filling</li>
+      <li>Root canal treatment</li>
+      <li>Tooth Extraction in severe cases</li>
+    </ul></div>
+  </section>
+  <script>
+    var popup=document.getElementById("myacc");
+    function openfunc1(){
+      popup.style.visibility = "visible";
+    }
+    function closefunc1(){
+      popup.style.visibility="hidden";
+    }
+  </script>
+</body>
+</html>
+navigation bar along with my acc button working , when you click my acc a pop-up opens of sign-up , and goes when clicked at sign-up , didnt gave validation though

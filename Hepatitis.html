@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptoms and Cure</title>
+  <style>
+    body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.Heading {
+  background-color: rgb(6, 70, 116); 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blue {
+  background-color: #2196F3; 
+  font-family: Arial, sans-serif;
+}
+
+.green {
+  background-color: #4CAF50;
+  font-family: Arial, sans-serif;
+}
+  </style>
+</head>
+<body>
+  <section class="Heading">
+    <h1>Symptoms and Cures</h1>
+  <section>
+
+  <main>
+    <section class="blue">
+      <h2>Symptoms</h2>
+      <p>
+        Jaundice, fatigue, abdominal pain, nausea.
+      </p>
+    </section>
+
+    <section class="green">
+      <h2>Cure</h2>
+      <p>
+        Supportive care, rest, adequate fluid intake, and vaccination for prevention.
+      </p>
+
+  <script>
+    // Function to show the sign-up form
+    function showSignUpForm() {
+      var signUpForm = document.createElement("div");
+      signUpForm.classList.add("sign-up-form");
+      signUpForm.innerHTML = `
+        <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 10px;">
+            <h2>Sign Up</h2>
+            <p>Enter your email to sign up:</p>
+            <form>
+              <input type="email" placeholder="Your email" required>
+              <button type="submit">Sign Up</button>
+            </form>
+            <button onclick="closeSignUpForm()" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; cursor: pointer;">&times;</button>
+          </div>
+        </div>
+      `;
+
+      document.body.appendChild(signUpForm);
+    }
+
+    // Function to close the sign-up form
+    function closeSignUpForm() {
+      var signUpForm = document.querySelector(".sign-up-form");
+      if (signUpForm) {
+        signUpForm.remove();
+      }
+    }
+
+    // Show the sign-up form after 6 seconds of scrolling
+    window.addEventListener("scroll", function() {
+      setTimeout(showSignUpForm, 6000);
+    });
+  </script>
+</body>
+</html>
