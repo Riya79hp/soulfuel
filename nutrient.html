@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
         <title>Yoga - Health and Wellness</title>
         <style>
           body {
@@ -65,21 +68,237 @@
             transform: translateY(-5px);
           }
       
-          footer {
-            background-color: #008080;
-            padding: 1rem;
-            color: #fff;
-            text-align: center;
-          }
-      
-          footer p {
-            margin: 0;
-            font-size: 0.8rem;
-          }
+            
+
+
+
+
+
+ .stickysearch{
+        transition: 0.2s;
+    }
+    
+    .stickysearch:hover{
+        transform: scale(1.2);
+        z-index: 1;
+        text-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    #div1 {
+        border-radius: 10px;
+        height:70px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(33, 171, 199);
+        font-size:large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #searchbox {
+        height: 30px;
+        margin-top: 15px;
+        width: 200px;
+    }
+   #div1 a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    #div1 a:hover{
+        color:aquamarine;
+        text-shadow: 6px 6px 4px rgb(133, 131, 131);
+    }
+    .showoff{
+        width:1500px;
+        height:1500px;
+    }
+    .iconflex{
+        display:flex;
+        justify-content: space-around;
+        
+    }
+    #logodiv{
+        width: 100px;
+        height: 100px;
+    }
+
+
+ @media screen and (max-width: 768px) {
+        #header-container {
+            justify-content: flex-start;
+        }
+
+        #header-text {
+            margin-left: 10px;
+        }
+
+        #div1 {
+            justify-content: center;
+        }
+
+        .iconflex {
+            display: none;
+        }
+
+        #searchbox {
+            width: 100%;
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        #logodiv {
+            margin-left: 10px;
+        }
+
+        #soulfuel-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px;
+            
+        }
+    }
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+    }
+
+    #header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-text {
+        color: #2cb1ea;
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    #header-text span {
+        color: aquamarine;
+    }
+  #footer {
+    display: grid;
+    overflow: hidden;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    border-radius: 15px;
+    background-color: #fbf5ed;
+    padding: 20px;
+    
+  }
+
+  #linkdiv {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+  }
+
+  #main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+  }
+
+  .main-contentgrid a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .main-contentgrid a:hover {
+    color: #ba235f;
+  }
+
+  #second-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  #footer a:hover {
+    color: #ba235f;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px 5px;
+  }
+
+  #footer a {
+    color: #000;
+    text-decoration: none;
+  }
+     .logo-container {
+      justify-content:center;
+      display:flex; /* Adjust alignment to the left */
+    }
+    div[style*="display:flex;"] {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  
+  @media screen and (max-width: 600px) {
+    #footer {
+      grid-template-rows: repeat(4, auto);
+      height: auto;
+    }
+
+    #main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .main-contentgrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
         </style>
       </head>
     
 <body>
+     <div id="div1">
+        <div class="iconflex">
+            <div style="width:40px;height:40px;">
+                <i class="fas fa-search" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <input type="text" id="searchbox" placeholder="SEARCH...">
+        </div>
+        <div class="iconflex">  
+            <div style="width:40px;height:40px;">
+                <i class="fa-solid fa-arrow-down-a-z" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <p class="stickysearch"><a href="#">Health A-Z</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:40px;height:40px;">
+                <i class="fas fa-utensils"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <p class="stickysearch"><a href="good food.html">Good Food</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;margin-right: 8px;">
+                <i class="fas fa-pills" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i> 
+            </div>
+            <p class="stickysearch"><a href="#">Prevention And Cure</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;">
+                <i class="fas fa-brain" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+            </div>
+            <p class="stickysearch"><a href="#">Tips And Tricks</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;">
+                <i class="fas fa-user-circle"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+            </div>
+            <p class="stickysearch"><a href="myacc.html"> My account</a></p>
+        </div>
+    </div>
   <header>
     <h1>Nutrients - Health and Wellness</h1>
   </header>
@@ -185,8 +404,71 @@
       </p>
     </div>
   </div>
-  <footer>
-    <p>&copy; 2023 Health and Wellness. All rights reserved.</p>
-  </footer>
+<div id="footer">
+  <div class="logo-container">
+        <h1 style="color:#2cb1ea">SOUL</h1>
+        <h1 style="color:aquamarine;margin-left:5px;">fuel</h1>
+      </div>
+    
+    <div class="grid" id="linkdiv">
+      <i class="fab fa-instagram" style="font-size:28px;cursor: pointer;"></i>
+      <i class="fab fa-facebook " style="font-size:28px;cursor: pointer;"></i>
+      <i class="fab fa-youtube " style="font-size:28px;cursor: pointer;"></i>
+      <i class="fab fa-twitter " style="font-size:28px;cursor: pointer;"></i>
+      <i class="fab fa-pinterest " style="font-size:28px;cursor: pointer;"></i>
+    </div>
+    <div class="grid" id="main-content">
+      <div class="main-contentgrid">
+        <p style="margin-left: 26%;"><a href="aboutus.html">About Us</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Contact Us</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Privacy Policy</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Privacy Settings</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Advertising Policy</a></p>
+        <hr>
+        <p style="margin-left: 26%;"><a href="#">Health Topics</a></p>
+        <hr>
+      </div>
+      <div class="main-contentgrid">
+       
+        <p style="margin-left:26%;"><a href="#">Medical affairs</a></p>
+        <hr></hr>
+      
+        <p  style="margin-left:26%;"><a href="#"  >Content integrity</a></p>
+        <hr></hr>
+        <p  style="margin-left:26%;"><a href="#">Newsletters</a></p>
+        <hr></hr>
+        <p  style="margin-left:26%;"><a href="#">Subscriptions</a></p>
+        <hr></hr>
+        <p  style="margin-left:26%;"><a href="#">Products</a></p>
+        <hr></hr>
+        <p  style="margin-left:26%;"><a href="#">Carrer</a></p>
+        <hr></hr>
+      </div>
+    </div>
+    <div class="grid" id="second-half">
+      <div class="second-half1">
+        <p style="font-size: 16px; padding: 15px;">Subscribe to our health and wellness website for the latest insights and tips on living a healthier life. Our curated content covers nutrition, fitness, mental well-being, and holistic approaches to wellness. Gain access to exclusive articles, expert interviews, and practical advice to support your journey to optimal health. Join our community today and embark on a transformative path to overall well-being.</p>
+      </div>
+      <div class="second-half1">
+        <h1 style="font-family: cursive; text-align: center;">SUBSCRIBE</h1>
+        <span style="display: flex; justify-content: center;margin-top:20px;"><input type="text" style="font-size: 16px;" placeholder="Enter your email..."><button style="background-color: #2cb1ea; color: aquamarine; cursor: pointer;">SIGN-UP</button></span>
+        <div style="display: flex; justify-content: center; margin-top: 15px; gap: 20px;">
+          <i class="fab fa-paypal" style="cursor: pointer;"></i>
+          <i class="fas fa-university" style="cursor: pointer;"></i>
+          <i class="fab fa-cc-visa" style="cursor: pointer;"></i>
+          <i class="fab fa-cc-mastercard" style="cursor: pointer;"></i>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #000; color: #fff; padding: 5px; text-align: center;margin-top:10px;width:100%;border-radius: 10px 10px 10px 10px;">
+      © 2018 Soulfuel. All rights reserved. All content and materials on the Soulfuel website, including text, images, and designs, are protected by copyright. Reproduction, distribution, or unauthorized use of any content without prior written permission from Soulfuel is strictly prohibited. For inquiries or permissions, please contact us at U_soulfuel@gmail.com. Your compliance with these terms is greatly appreciated. Thank you for visiting Soulfuel.
+    </div>
+  </div>
+    
+    
 </body>
 </html>
