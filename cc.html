@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulFuel Health and Wellness - Careers</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+</head>
+<style>
+    /* styles.css */
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Hero section styles */
+.hero {
+
+    background-size: cover;
+    background-position: center;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Career Opportunities section styles */
+.career-opportunities {
+    padding: 40px;
+}
+
+.job-listing {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.job-listing h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-listing p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.job-listing a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.job-listing a:hover {
+    background-color: #45a049;
+}
+
+/* Why Join section styles */
+.why-join {
+    background-color: #f7f7f7;
+    padding: 40px;
+    text-align: center;
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reason {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.reason h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Apply Now section styles */
+.apply-now {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.apply-now p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.apply-now a {
+    display: inline-block;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-now a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Contact form section styles */
+.contact-form {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.job-listing, .reason, .apply-now, .contact-form {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.apply-now a {
+    animation: pulse 1.5s infinite;
+}
+.stickysearch{
+        transition: 0.2s;
+        margin-top:15px;
+    }
+    
+    .stickysearch:hover{
+        transform: scale(1.2);
+        z-index: 1;
+        text-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    #div1 {
+        border-radius: 10px;
+        height:70px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-color: rgb(33, 171, 199);
+        font-size:large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #searchbox {
+        height: 30px;
+        margin-top: 15px;
+        width: 200px;
+    }
+   #div1 a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    #div1 a:hover{
+        color:aquamarine;
+        text-shadow: 6px 6px 4px rgb(133, 131, 131);
+    }
+    .showoff{
+        width:1500px;
+        height:1500px;
+    }
+    .iconflex{
+        display:flex;
+        justify-content: space-around;
+        
+    }
+    #logodiv{
+        width: 100px;
+        height: 100px;
+    }
+
+
+ @media screen and (max-width: 768px) {
+        #header-container {
+            justify-content: flex-start;
+        }
+
+        #header-text {
+            margin-left: 10px;
+        }
+
+        #div1 {
+            justify-content: center;
+        }
+
+        .iconflex {
+            display: none;
+        }
+
+        #searchbox {
+            width: 100%;
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        #logodiv {
+            margin-left: 10px;
+        }
+
+        #soulfuel-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px;
+            
+        }
+    }
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+    }
+
+    #header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #header-text {
+        color: #2cb1ea;
+        font-size: 45px;
+        margin-right: 5px;
+    }
+
+    #header-text span {
+        color: aquamarine;
+    }
+  #footer {
+    display: grid;
+    overflow: hidden;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    border-radius: 15px;
+    background-color: #fbf5ed;
+    padding: 20px;
+    
+  }
+
+  #linkdiv {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+  }
+
+  #main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+  }
+
+  .main-contentgrid a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .main-contentgrid a:hover {
+    color: #ba235f;
+  }
+
+  #second-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  #footer a:hover {
+    color: #ba235f;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px 5px;
+  }
+
+  #footer a {
+    color: #000;
+    text-decoration: none;
+  }
+     .logo-container {
+      justify-content:center;
+      display:flex; /* Adjust alignment to the left */
+    }
+    div[style*="display:flex;"] {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  
+  @media screen and (max-width: 600px) {
+    #footer {
+      grid-template-rows: repeat(4, auto);
+      height: auto;
+    }
+
+    #main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .main-contentgrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+</style>
+<body>
+    <div id="div1">
+        <div class="iconflex">
+            <div style="width:40px;height:40px;">
+                <i class="fas fa-search" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <input type="text" id="searchbox" placeholder="SEARCH...">
+        </div>
+        <div class="iconflex">  
+            <div style="width:40px;height:40px;">
+                <i class="fa-solid fa-arrow-down-a-z" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <p class="stickysearch"><a href="#">Health A-Z</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:40px;height:40px;">
+                <i class="fas fa-utensils"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;margin-left:15px;"></i>
+            </div>
+            <p class="stickysearch"><a href="good food.html">Good Food</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;margin-right: 8px;">
+                <i class="fas fa-pills" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i> 
+            </div>
+            <p class="stickysearch"><a href="#">Prevention And Cure</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;">
+                <i class="fas fa-brain" style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+            </div>
+            <p class="stickysearch"><a href="#">Tips And Tricks</a></p>
+        </div>
+        <div class="iconflex"> 
+            <div style="width:20px;height:20px;">
+                <i class="fas fa-user-circle"  style="color: #ffffff;width:100%;height:100%;object-fit:cover;margin-top:22px;"></i>
+            </div>
+            <p class="stickysearch"><a href="myacc.html"> My account</a></p>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Join Our Soulful Team</h1>
+            <p>At SoulFuel Health and Wellness, we believe in empowering individuals to lead healthier, happier lives.</p>
+        </div>
+    </section>
+
+    <section class="career-opportunities">
+        <h2>Current Career Opportunities</h2>
+        <div class="job-listings">
+            <!-- List out your job openings here -->
+            <div class="job-listing">
+                <h3>Wellness Coach</h3>
+                <p>We are looking for a certified Wellness Coach to guide and inspire our clients in their journey towards better health and well-being. If you are passionate about helping others and have a background in health and wellness, we want to hear from you.</p>
+                <a href="#apply-now">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Nutritionist</h3>
+                <p>Are you a qualified Nutritionist with a deep understanding of dietary and nutritional needs? Join our team and help our clients make informed choices for their physical and mental well-being.</p>
+                <a href="#apply-now">Apply Now</a>
+            </div>
+            <!-- Add more job listings here -->
+        </div>
+    </section>
+
+    <section class="why-join">
+        <h2>Why Join SoulFuel?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Meaningful Impact</h3>
+                <p>At SoulFuel, your work directly impacts the lives of individuals striving for better health and happiness. It's a rewarding experience to see positive transformations every day.</p>
+            </div>
+            <div class="reason">
+                <h3>Growth Opportunities</h3>
+                <p>We are committed to your professional growth and development. As you help others thrive, we'll provide you with the resources and support to thrive in your career.</p>
+            </div>
+            <div class="reason">
+                <h3>Inclusive Culture</h3>
+                <p>SoulFuel embraces diversity and inclusivity. We believe that different perspectives lead to innovation and better outcomes for our clients and team.</p>
+            </div>
+            <div class="reason">
+                <h3>Work-Life Balance</h3>
+                <p>We value work-life balance and understand the importance of taking care of yourself. We encourage our team members to prioritize their well-being.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="apply-now" id="apply-now">
+        <h2>Ready to Join Our Team?</h2>
+        <p>If you are passionate about health and wellness and want to make a positive impact on people's lives, we'd love to hear from you.</p>
+        <a href="#contact-form">Apply Now</a>
+    </section>
+
+    <section class="contact-form" id="contact-form">
+        <h2>Contact Us</h2>
+        <p>Fill out the form below to apply for a position or to get more information about our career opportunities.</p>
+        <form action="submit.php" method="POST">
+            <!-- Your contact form fields go here -->
+        </form>
+    </section>
+
+    <div id="footer">
+        <div class="logo-container">
+              <h1 style="color:#2cb1ea">SOUL</h1>
+              <h1 style="color:aquamarine;margin-left:5px;">fuel</h1>
+            </div>
+          
+          <div class="grid" id="linkdiv">
+            <i class="fab fa-instagram" style="font-size:28px;cursor: pointer;"></i>
+            <i class="fab fa-facebook " style="font-size:28px;cursor: pointer;"></i>
+            <i class="fab fa-youtube " style="font-size:28px;cursor: pointer;"></i>
+            <i class="fab fa-twitter " style="font-size:28px;cursor: pointer;"></i>
+            <i class="fab fa-pinterest " style="font-size:28px;cursor: pointer;"></i>
+          </div>
+          <div class="grid" id="main-content">
+            <div class="main-contentgrid">
+              <p style="margin-left: 26%;"><a href="aboutus.html">About Us</a></p>
+              <hr>
+              <p style="margin-left: 26%;"><a href="#">Contact Us</a></p>
+              <hr>
+              <p style="margin-left: 26%;"><a href="#">Privacy Policy</a></p>
+              <hr>
+              <p style="margin-left: 26%;"><a href="#">Privacy Settings</a></p>
+              <hr>
+              <p style="margin-left: 26%;"><a href="#">Advertising Policy</a></p>
+              <hr>
+              <p style="margin-left: 26%;"><a href="#">Health Topics</a></p>
+              <hr>
+            </div>
+            <div class="main-contentgrid">
+             
+              <p style="margin-left:26%;"><a href="#">Medical affairs</a></p>
+              <hr></hr>
+            
+              <p  style="margin-left:26%;"><a href="#"  >Content integrity</a></p>
+              <hr></hr>
+              <p  style="margin-left:26%;"><a href="#">Newsletters</a></p>
+              <hr></hr>
+              <p  style="margin-left:26%;"><a href="#">Subscriptions</a></p>
+              <hr></hr>
+              <p  style="margin-left:26%;"><a href="#">Products</a></p>
+              <hr></hr>
+              <p  style="margin-left:26%;"><a href="#">Carrer</a></p>
+              <hr></hr>
+            </div>
+          </div>
+          <div class="grid" id="second-half">
+            <div class="second-half1">
+              <p style="font-size: 16px; padding: 15px;">Subscribe to our health and wellness website for the latest insights and tips on living a healthier life. Our curated content covers nutrition, fitness, mental well-being, and holistic approaches to wellness. Gain access to exclusive articles, expert interviews, and practical advice to support your journey to optimal health. Join our community today and embark on a transformative path to overall well-being.</p>
+            </div>
+            <div class="second-half1">
+              <h1 style="font-family: cursive; text-align: center;">SUBSCRIBE</h1>
+              <span style="display: flex; justify-content: center;margin-top:20px;"><input type="text" style="font-size: 16px;" placeholder="Enter your email..."><button style="background-color: #2cb1ea; color: aquamarine; cursor: pointer;">SIGN-UP</button></span>
+              <div style="display: flex; justify-content: center; margin-top: 15px; gap: 20px;">
+                <i class="fab fa-paypal" style="cursor: pointer;"></i>
+                <i class="fas fa-university" style="cursor: pointer;"></i>
+                <i class="fab fa-cc-visa" style="cursor: pointer;"></i>
+                <i class="fab fa-cc-mastercard" style="cursor: pointer;"></i>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #000; color: #fff; padding: 5px; text-align: center;margin-top:10px;width:100%;border-radius: 10px 10px 10px 10px;">
+            © 2018 Soulfuel. All rights reserved. All content and materials on the Soulfuel website, including text, images, and designs, are protected by copyright. Reproduction, distribution, or unauthorized use of any content without prior written permission from Soulfuel is strictly prohibited. For inquiries or permissions, please contact us at U_soulfuel@gmail.com. Your compliance with these terms is greatly appreciated. Thank you for visiting Soulfuel.
+          </div>
+        </div>
+</body>
+</html>
