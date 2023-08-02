@@ -357,95 +357,83 @@
     
     
     /*faq*/
-  
+  body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .faq {
-    margin-bottom: 10px;
-  }
-  
-  .faq-question {
-    cursor: pointer;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .faq-question:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.02);
-  }
-  
-  .faq-answer {
-    display: none;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .faq-toggle {
-    display: none;
-  }
-  
-  .faq-toggle:checked + .faq-question {
-    background-color: #c3e6cb;
-    transform: scale(1.02);
-  }
-  
-  .faq-toggle:checked + .faq-question:hover {
-    background-color: #a3d8a8;
-    transform: scale(1);
-  }
-  
-  .faq-toggle:checked + .faq-question + .faq-answer {
-    display: block;
-    opacity: 1;
-    transform: translateY(5px);
-    animation: flipInX 0.8s ease;
-  }
-  
-  @keyframes flipInX {
-    from {
-      transform: perspective(400px) rotateX(90deg);
-      opacity: 0;
-    }
-    to {
-      transform: perspective(400px) rotateX(0deg);
-      opacity: 1;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 24px;
-    }
-  
-    .faq-question {
-      font-size: 18px;
-    }
-  
-    .faq-answer {
-      font-size: 14px;
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.faq {
+  background-color: #f1f5ff; /* Light blue background */
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #333; /* Dark text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+.faq-question {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0078d4; /* Blue question color */
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #555; /* Slightly darker text color for answers */
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+  display: block;
+  border-top: 1px solid #0078d4; /* Blue border for the answer */
+  padding-top: 10px;
+}
+
+/* Style the checkbox */
+.faq-toggle + .faq-question::before {
+  content: '+';
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+  color: #0078d4; /* Blue plus sign */
+}
+
+.faq-toggle:checked + .faq-question::before {
+  content: '-';
+}
+
+/* Link styles */
+a {
+  color: #0078d4;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004080; /* Slightly darker blue on hover */
+  text-decoration: none;
+}                                        
+    
+
+       
 
 
 
@@ -1040,7 +1028,8 @@ border-radius: 10px;
   </div>
     <p></p>
  <div id="t"><hr > </div> 
-  <h1>Frequently Asked Questions</h1>
+    
+      <h1>Frequently Asked Questions</h1>
 
   <div class="faq">
     <input type="checkbox" class="faq-toggle" id="faq1">
@@ -1065,11 +1054,11 @@ border-radius: 10px;
         </label>
         <div class="faq-answer">
             For beginners, here are five foundational yoga poses:
-            - **Mountain Pose:** Stand tall with feet together, engage your core, and relax your shoulders.
-            - **Downward Facing Dog:** Start on all fours, lift your hips upward, forming an inverted V shape.
-            - **Warrior 2:** Step one foot back, bend your front knee, and extend arms out to the sides.
-            - **Child's Pose:** Kneel down, sit back on your heels, and stretch your arms forward.
-            - **Corpse Pose (Savasana):** Lie on your back, arms at your sides, and focus on deep, relaxing breaths.
+            - *Mountain Pose:* Stand tall with feet together, engage your core, and relax your shoulders.
+            - *Downward Facing Dog:* Start on all fours, lift your hips upward, forming an inverted V shape.
+            - *Warrior 2:* Step one foot back, bend your front knee, and extend arms out to the sides.
+            - *Child's Pose:* Kneel down, sit back on your heels, and stretch your arms forward.
+            - *Corpse Pose (Savasana):* Lie on your back, arms at your sides, and focus on deep, relaxing breaths.
         </div>
     </div> 
 
@@ -1142,6 +1131,8 @@ border-radius: 10px;
                                                             Yes, certain yoga poses can strengthen the back muscles and improve flexibility, alleviating back pain. Poses like Cat-Cow, Cobra, and Child's Pose can be beneficial.
                                                         </div></div>                                               
     
+
+       
 
        
   
