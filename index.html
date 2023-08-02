@@ -621,67 +621,6 @@ a {
     }
 
 
-/*slider*/
-    .carousel {
-  position: relative;
-  margin-top: 30px;
-}
-
-.carousel-wrapper {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: 85%; /* Set width to 85% */
-  margin: 0 auto; /* Center align the carousel */
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-  opacity: 1;
-}
-
-.carousel-prev {
-  left: 20px;
-}
-
-.carousel-next {
-  right: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -751,28 +690,6 @@ a {
             <p class="stickysearch"><a href="myacc.html"> My account</a></p>
         </div>
     </div>
-
-
-<section class="carousel">
-  <div class="carousel-wrapper">
-    <div class="carousel-slide">
-      <img src="lice.jpeg" alt="Image 1">
-      <img src="salmon.jpg" alt="Image 2">
-      <img src="vaccine.jpg" alt="Image 3">
-    </div>
-  </div>
-  <button class="carousel-prev">❮</button>
-  <button class="carousel-next">❯</button>
-</section>
-
-
-
-
-    
-
-
-
-
 
 
 
@@ -1211,39 +1128,7 @@ a {
     
 
 
-<script >const carouselSlide = document.querySelector(".carousel-slide");
-const prevButton = document.querySelector(".carousel-prev");
-const nextButton = document.querySelector(".carousel-next");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
-
-let counter = 0;
-const slideWidth = carouselImages[0].clientWidth;
-
-nextButton.addEventListener("click", () => {
-  if (counter >= carouselImages.length - 1) return;
-  counter++;
-  carouselSlide.style.transition = "transform 0.3s ease-in-out";
-  carouselSlide.style.transform = `translateX(-${slideWidth * counter}px)`;
-});
-
-prevButton.addEventListener("click", () => {
-  if (counter <= 0) return;
-  counter--;
-  carouselSlide.style.transition = "transform 0.3s ease-in-out";
-  carouselSlide.style.transform = `translateX(-${slideWidth * counter}px)`;
-});
-
-carouselSlide.addEventListener("transitionend", () => {
-  if (carouselImages[counter].alt === "Image 1") {
-    carouselSlide.style.transition = "none";
-    counter = 0;
-    carouselSlide.style.transform = `translateX(0)`;
-  } else if (carouselImages[counter].alt === "Image 2") {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - 2;
-    carouselSlide.style.transform = `translateX(-${slideWidth * counter}px)`;
-  }
-});
+<script >
 </script>
 
 
