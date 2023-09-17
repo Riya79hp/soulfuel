@@ -918,28 +918,34 @@ footer {
 
 
 
-   .er {
+  /* Style for the er div */
+        .er {
             text-align: center;
             padding: 20px;
-            background-color: #3498db;
-            color: #fff;
-            font-size: 24px; 
-            border-radius: 10px; 
-            width: 100%; 
-            margin: 0 auto; 
-            animation: fadeIn 2s ease; 
+            background-color: #3498db; /* Background color */
+            color: #fff; /* Text color */
+            font-size: 24px; /* Font size */
+            border-radius: 10px; /* Rounded corners */
+            width: 300px; /* Width of the div */
+            margin: 0 auto; /* Center horizontally */
+            animation: fadeInOut 2s infinite; /* Infinite animation */
         }
 
-        /* Keyframes for fade-in animation */
-        @keyframes fadeIn {
-            from {
+        /* Keyframes for fade-in and fade-out animation */
+        @keyframes fadeInOut {
+            0% {
                 opacity: 0;
             }
-            to {
+            25% {
                 opacity: 1;
             }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
         }
-
 
 
 
