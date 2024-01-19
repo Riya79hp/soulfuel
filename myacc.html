@@ -20,13 +20,15 @@
     }
     
     #myacc {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        border: 2px solid black;
-        padding: 50px;
-        background-color: #fff;
-    }
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid black;
+    padding: 50px;
+    background-color: #fff;
+    margin: 0 auto; 
+
+}
     
     #myacc input[type="text"],
     #myacc input[type="password"] {
@@ -67,6 +69,45 @@
         width: 100px;
         height: 100px;
     }
+   
+    #user-info {
+    visibility: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    max-width: 300px; /* Limit maximum width for better readability */
+    margin: 20px auto; /* Center the user info box horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; /* Move it 50% from the left */
+    transform: translate(-50%, -50%); /* Center it precisely */
+}
+
+#user-info div {
+    margin-bottom: 15px; /* Increase spacing between each div */
+}
+
+#user-info span {
+    font-size: 1.5em;
+    color: #333; /* Darken the text color for better contrast */
+}
+
+#user-info #emailb, #user-info #numberb {
+    font-weight: bold; /* Make email and number text bold */
+    color: #4CAF50; /* Use a green color for emphasis */
+}
+
+/* Responsive adjustments for user info */
+@media screen and (max-width: 500px) {
+    #user-info {
+        padding: 15px;
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+}
     
     /* Responsive adjustments */
     @media screen and (max-width: 500px) {
@@ -76,8 +117,17 @@
     }
 </style>
 <body>
-    <div id="myacc">
-        <form>
+    <div id="user-info">
+        <div><span style="font-size: 1.5em;">WELCOME</span>
+            <br>
+            <div id="emailb"></div>
+        </div>
+        <div>Ur Mobile Number:
+            <div id="numberb"></div>
+        </div>
+    </div>
+    <div id="myacc" >
+        <form >
             <label for="email">Email:</label>
             <br>
             <input type="text" id="email" name="email" required>
@@ -94,7 +144,7 @@
             <br>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
             <br><br>
-            <input type="submit" value="Sign Up" onclick="closefunc1()">
+            <input type="button" value="Sign Up" onclick="closefunc1()">
             <div class="signup-social">
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
@@ -103,5 +153,33 @@
             </div>
         </form>
     </div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+      function closefunc1(){
+       let r = document.getElementById('myacc');
+       r.style.display = 'none';
+       let e=document.getElementById('email').value;
+       let n=document.getElementById('mobile').value;
+        let eb=document.getElementById('emailb');
+       let nb=document.getElementById('numberb');
+       let g=document.getElementById('user-info');
+       eb.innerHTML=e;
+       nb.innerHTML=n;
+       g.style.visibility='visible';
+       
+      }
+      
+      
+      
+      
+    </script>
 </body>
 </html>
